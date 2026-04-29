@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Consorcio de Pronósticos de Lotería</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+    position:absolute;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    color:white;
+    z-index:10;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background: url("fotodeperfil.jpg") center center / cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:0 40px;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+/* BOTÓN */
+.btn{
+    background:#25D366;
+    padding:14px 28px;
+    border:none;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1ebe5d;
+}
+
+/* SECCIONES */
+.section{
+    padding:80px 40px;
+}
+
+.section h2{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.section p{
+    max-width:900px;
+    line-height:1.8;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        padding:15px;
+        text-align:center;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    .hero{
+        padding:20px;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .section{
+        padding:40px 20px;
+        text-align:center;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+    <h2>Consorcio</h2>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Análisis</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Consorcio de Licenciados en Pronósticos de Lotería</h1>
+        <p>
+            ¿Buscas mejorar tus probabilidades? Aplicamos análisis estadístico avanzado
+            basado en datos reales de Mega Millions y Powerball.
+        </p>
+
+        <a href="https://wa.me/19293448434?text=Hola%20quiero%20información%20sobre%20los%20pronósticos" 
+           target="_blank" class="btn">
+           Consultar por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+        Somos un consorcio especializado en el análisis de patrones numéricos dentro de los principales juegos de lotería.
+        Nuestro equipo utiliza herramientas estadísticas avanzadas para interpretar tendencias y ofrecer información clara.
+    </p>
+</section>
+
+<!-- METODOLOGÍA -->
+<section class="section">
+    <h2>Nuestra metodología</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Análisis histórico</h3>
+            <p>Revisión de resultados pasados para detectar patrones.</p>
+        </div>
+
+        <div class="card">
+            <h3>Probabilidad</h3>
+            <p>Evaluación matemática de combinaciones.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tendencias</h3>
+            <p>Identificación de números frecuentes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estrategia</h3>
+            <p>Interpretación de datos para orientación.</p>
+        </div>
+    </div>
+</section>
+
+<!-- IMPORTANTE -->
+<section class="section">
+    <h2>Importante</h2>
+    <p>
+        La lotería es un juego de azar. Ningún método garantiza resultados.
+        Este sitio es informativo y promueve el juego responsable.
+    </p>
+</section>
+
+<footer>
+    © 2026 Consorcio de Pronósticos de Lotería
+</footer>
+
+</body>
+</html>
